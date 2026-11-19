@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Hub - Learn Every Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <span>📚</span> Knowledge Hub
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#daily">Daily Learning</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="pages/bookmarks.html">Bookmarks</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="tag">WELCOME TO KNOWLEDGE HUB</span>
+
+            <h1>
+                Learn Something New
+                <span>Every Day.</span>
+            </h1>
+
+            <p>
+                Discover knowledge, develop skills and explore
+                new ideas. Start your learning journey today.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#categories" class="btn primary">
+                    Start Learning
+                </a>
+
+                <a href="#daily" class="btn secondary">
+                    Explore More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <h2>What Do You Want To Learn?</h2>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search anything..."
+            >
+            <button onclick="searchContent()">Search</button>
+        </div>
+
+        <p id="searchMessage"></p>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories section" id="categories">
+
+        <div class="section-heading">
+            <span>EXPLORE KNOWLEDGE</span>
+            <h2>Learning Categories</h2>
+            <p>Choose your favorite topic and start learning.</p>
+        </div>
+
+        <div class="category-grid">
+
+            <div class="category-card" data-search="technology it programming computer">
+                <div class="category-icon">💻</div>
+                <h3>
+                    Technology & IT
+
+<div class="category-card" data-search="technology it programming computer">
+
+    <div class="category-icon">💻</div>
+
+    <h2>Technology & IT</h2>
+
+    <p>
+        Learn programming, computers and modern technology.
+    </p>
+
+    <h3>Popular Topics:</h3>
+
+    <ul class="topic-list">
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Python Programming</li>
+        <li>Computer Networking</li>
+        <li>Database Management</li>
+    </ul>
+
+    <p class="article-count">
+        25+ Learning Articles
+    </p>
+
+    <a href="html-css.html">
+        Explore →
+    </a>
+
+</div>
+
+
+                </h3>
+                <p>Learn programming, computers and modern technology.</p>
+                <a href="pages/categories.html?category=technology">Explore →</a>
+            </div>
+
+            <div class="category-card" data-search="general knowledge science history">
+                <div class="category-icon">🌍</div>
+                <h3>General Knowledge</h3>
+                <p>Discover science, history and interesting facts.</p>
+                <a href="pages/categories.html?category=general">Explore →</a>
+            </div>
+
+            <div class="category-card" data-search="self development skills success">
+                <div class="category-icon">🚀</div>
+                <h3>Self Development</h3>
+                <p>Improve yourself and develop new skills.</p>
+                <a href="pages/categories.html?category=self">Explore →</a>
+            </div>
+
+            <div class="category-card" data-search="language english grammar vocabulary">
+                <div class="category-icon">🌐</div>
+                <h3>Language Learning</h3>
+                <p>Learn English, vocabulary and communication.</p>
+                <a href="pages/categories.html?category=language">Explore →</a>
+            </div>
+
+            <div class="category-card" data-search="inspiration motivation stories">
+                <div class="category-icon">💡</div>
+                <h3>Inspiration & Motivation</h3>
+                <p>Read inspiring stories and meaningful lessons.</p>
+                <a href="pages/categories.html?category=inspiration">Explore →</a>
+            </div>
+
+            <div class="category-card" data-search="life skills career business">
+                <div class="category-icon">🎯</div>
+                <h3>Life Skills</h3>
+                <p>Learn practical skills for everyday life.</p>
+                <a href="pages/categories.html?category=life">Explore →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Daily Learning -->
+    <section class="daily-section" id="daily">
+        <div class="daily-content">
+            <span>DAILY LEARNING</span>
+            <h2>Knowledge of the Day</h2>
+
+            <div class="daily-card">
+                <h3 id="dailyTitle">আজকের শিক্ষণীয় বিষয়</h3>
+                <p id="dailyText">
+                    প্রতিদিন নতুন কিছু শেখা আমাদের জ্ঞান ও দক্ষতা
+                    বৃদ্ধিতে সাহায্য করে।
+                </p>
+                <button onclick="newLearning()">Learn Another</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>📚 Knowledge Hub</h2>
+        <p>Learn Something New Every Day.</p>
+        <p>© 2026 Knowledge Hub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

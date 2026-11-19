@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Knowledge Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="quiz-container">
+
+        <h1>Knowledge Hub Quiz</h1>
+        <p>Test your knowledge and improve your skills.</p>
+
+        <form id="quizForm">
+
+            <div class="question">
+                <h3>1. What does HTML stand for?</h3>
+
+                <label>
+                    <input type="radio" name="q1" value="a">
+                    Hyper Text Markup Language
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="b">
+                    High Text Machine Language
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="c">
+                    Hyper Tool Multi Language
+                </label>
+            </div>
+
+            <div class="question">
+                <h3>2. Which language is used for web styling?</h3>
+
+                <label>
+                    <input type="radio" name="q2" value="a">
+                    JavaScript
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="b">
+                    CSS
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="c">
+                    Python
+                </label>
+            </div>
+
+            <div class="question">
+                <h3>3. Which language adds interactivity to websites?</h3>
+
+                <label>
+                    <input type="radio" name="q3" value="a">
+                    HTML
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="b">
+                    CSS
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="c">
+                    JavaScript
+                </label>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+
+        </form>
+
+        <h2 id="result"></h2>
+
+    </div>
+
+    <script src="quiz.js"></script>
+
+</body>
+</html>
