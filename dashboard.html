@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard | Knowledge Hub</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="dashboard-header">
+        <a href="index.html" class="logo">📚 Knowledge Hub</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#categories">Categories</a>
+            <a href="index.html#daily-learning">Daily Learning</a>
+            <a href="index.html#quiz">Quiz</a>
+            <a href="index.html#bookmarks">Bookmarks</a>
+            <a href="dashboard.html" class="active">Dashboard</a>
+        </nav>
+    </header>
+
+    <main class="dashboard-container">
+
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <div>
+                <p class="small-title">STUDENT DASHBOARD</p>
+                <h1>Welcome, <span id="studentName">Student</span>!</h1>
+                <p>Keep learning and improve your knowledge every day.</p>
+            </div>
+
+            <div class="profile-box">
+                <div class="profile-icon">👨‍🎓</div>
+                <div>
+                    <strong id="profileName">Student</strong>
+                    <p>Knowledge Hub Learner</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Name Settings -->
+        <section class="name-settings">
+            <label for="nameInput">Your Name:</label>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <button id="saveName">Save Name</button>
+        </section>
+
+        <!-- Statistics -->
+        <section class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-icon blue">📚</div>
+                <h3>Total Lessons</h3>
+                <h2 id="lessonCount">0</h2>
+                <p>Completed lessons</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon green">📝</div>
+                <h3>Quiz Completed</h3>
+                <h2 id="quizCount">0</h2>
+                <p>Completed quizzes</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon orange">🔖</div>
+                <h3>Bookmarks</h3>
+                <h2 id="bookmarkCount">0</h2>
+                <p>Saved topics</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon purple">🏆</div>
+                <h3>Average Score</h3>
+                <h2 id="averageScore">0%</h2>
+                <p>Quiz performance</p>
+            </div>
+
+        </section>
+
+        <!-- Learning Progress -->
+        <section class="dashboard-card progress-section">
+            <h2>📈 Learning Progress</h2>
+            <p>Your completed lessons progress</p>
+
+            <div class="progress-info">
+                <span>Completed Lessons</span>
+                <strong id="progressText">0%</strong>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+
+            <p id="progressMessage">Start learning to track your progress!</p>
+        </section>
+
+        <!-- Recent Activity -->
+        <section class="dashboard-card">
+            <h2>🕒 Recent Learning Activity</h2>
+
+            <div id="activityList" class="activity-list">
+                <p class="empty-message">
+                    No learning activity yet.
+                    Start learning to see your activity here.
+                </p>
+            </div>
+        </section>
+
+        <!-- Quick Links -->
+        <section class="dashboard-card">
+            <h2>🚀 Quick Access</h2>
+
+            <div class="quick-links">
+                <a href="index.html#categories">📚 Explore Lessons</a>
+                <a href="index.html#quiz">📝 Take a Quiz</a>
+                <a href="index.html#bookmarks">🔖 My Bookmarks</a>
+                <a href="index.html">🏠 Back to Home</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="dashboard-footer">
+        <h3>📚 Knowledge Hub</h3>
+        <p>Learn Something New Every Day.</p>
+        <p>© 2026 Knowledge Hub. All Rights Reserved.</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>
